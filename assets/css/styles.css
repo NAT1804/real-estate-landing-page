@@ -1,3 +1,10 @@
+:root {
+  --primary-background-color: #e6f0ff;
+  --primary-text-color: #4f5361;
+  --secondary-text-color: #0f1b4c;
+  --background-button-color: #0f1b4c;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,5 +15,104 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Common CSS */
+.content {
+  width: 111rem;
+  max-width: calc(100% - 4.8rem);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 9.8rem;
+  padding: 1.8rem 1.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--background-button-color);
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Header CSS */
+.header {
+  position: relative;
+  background-color: var(--primary-background-color);
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.8rem;
+  font-size: 1.4rem;
+}
+
+.nav ul {
+  flex: 1;
+  display: flex;
+  margin: 0 5rem;
+}
+
+.nav ul a {
+  padding: 1.4rem;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.nav ul a:hover {
+   text-decoration: underline;
+}
+
+.nav .actions a:first-child {
+  margin-right: 1.8rem;
+  color: var(--secondary-text-color);
+}
+
+.nav .actions a:last-child {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.hero {
+  margin-top: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 51%;
+}
+
+.hero .info p {
+  color: var(--primary-text-color);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.hero .info h1 {
+  color: #000336;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.19;
+  margin: 0.8rem 0 3rem;
+}
+
+.hero .info a {
+  margin-top: 4rem;
+}
+
+.hero img {
+  position: absolute;
+  right: calc((100vw - 110rem) / 2 - 10rem);
+  bottom: 0;
 }
